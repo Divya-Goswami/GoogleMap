@@ -1,48 +1,20 @@
-<!-- <mat-card>
-	<mat-card-header>
-		<mat-toolbar color="primary">
-			<mat-toolbar-row>
-				<h2 mat-card-title>Container Details ( Google Map )</h2>
-			</mat-toolbar-row>
-		</mat-toolbar>
-	</mat-card-header> -->
-
-		<!-- <google-map height="90%"
-			width="100%"> -->
-			<!-- <map-marker *ngFor="let marker of markers"
-				[position]="marker.position"
-				[label]="marker.label"
-				[title]="marker.title"
-				[options]="marker.options">
-			</map-marker> -->
-			<!-- </google-map> -->
-
-			<!-- <google-map
-				height="100%"
-				[zoom] = "zoom"
-				[center]="center"
-				width="100%">
-
-				<map-marker
-			    *ngFor="let marker of markers"
-			    [position]="marker.position"
-			    [label]="marker.label"
-			    [title]="marker.title"
-			    [options]="marker.options"
-			  >
-			  </map-marker>
-
-			  <map-info-window>Hello Google Maps</map-info-window>
-			</google-map>
-		 <google-map
-			height="300px"
-			width="50%"
-			[zoom] = "zoom"
-			[center]="center"
-			[options]="options">
-		</google-map> -->
-
-		<!-- <button (click)="zoomIn()">Zoom in</button>
-		<button (click)="zoomOut()">Zoom out</button>
-</mat-card> -->
-	<router-outlet></router-outlet>
+<google-map
+	height="500px"
+	width="100%"
+	[zoom]="zoom"
+	[center]="center"
+	[options]="options"
+	(mapClick)="click($event)">
+		<map-marker
+			#markerElem
+			*ngFor="let marker of markers"
+			[position]="marker.position"
+			[label]="marker.label"
+			[title]="marker.title"
+			[options]="marker.options"
+			(mapClick)="openInfo(markerElem, marker.info)">
+		</map-marker>
+		<map-info-window>
+			<div [innerHTML]="infoContent"></div>
+		</map-info-window>
+</google-map>

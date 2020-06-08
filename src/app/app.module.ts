@@ -8,12 +8,10 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { GoogleMapsModule } from '@angular/google-maps';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
-import { LoadMarkerComponent } from './load-marker/load-marker.component'
 
 @NgModule({
   declarations: [
-    AppComponent,
-    LoadMarkerComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,
