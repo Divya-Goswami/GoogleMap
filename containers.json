@@ -1,0 +1,74 @@
+{
+	"containers" : [
+		{
+			 "id": 1,
+			"container_no": "MSC00000001",
+			"lat":24.8395,
+			"lgn":69.7213,
+			"img_src":"assets/c1.jpeg",
+			"container_detail": [
+				{
+					"ageing_day": 101,
+					"type": "DV",
+					"size":20 
+				}
+			]  
+		},
+		{
+			 "id": 2,
+			"container_no": "MSC00000002",
+			"lat":22.1784,
+			"lgn":72.6588,
+			"img_src":"assets/c2.jpeg",
+			"container_detail": [
+				{
+					"ageing_day": 102,
+					"type": "CS",
+					"size":20 
+				}
+			]  
+		},
+		{
+			"id": 3,
+			"container_no": "MSC00000003",
+			"lat":21.1784,
+			"lgn":50.6588,
+			"img_src":"assets/c3.jpeg",
+			"container_detail": [
+				{
+					"ageing_day": 103,
+					"type": "DW",
+					"size":40 
+				}
+			]  
+		},
+		{
+			"id": 4,
+			"container_no": "MSC00000004",
+			"lat":24.1784,
+			"lgn":70.6588,
+			"img_src":"assets/c4.jpeg",
+			"container_detail": [
+				{
+					"ageing_day": 104,
+					"type": "CV",
+					"size":40 
+				}
+			]  
+		},
+		{
+			"id": 5,
+			"container_no": "MSC00000005",
+			"lat":28.1784,
+			"lgn":59.6588,
+			"img_src":"assets/c5.jpeg",
+			"container_detail": [
+				{
+					"ageing_day": 105,
+					"type": "FC",
+					"size":40 
+				}
+			]  
+		}
+	]
+}
